@@ -76,3 +76,5 @@ Route::get('/categories' ,'CategoryController@index')->name('categories.index');
 Route::get('/categories/show/{id}' ,'CategoryController@show')->name('categories.show');
 
 
+Route::get('login/github', 'AuthController@redirectToProvider')->name('login.github.redirect');
+Route::get('login/github/callback', 'AuthController@handleProviderCallback')->name('login.github.callback');

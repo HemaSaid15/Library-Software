@@ -32,4 +32,7 @@
 
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+
+    <a href="{{ route('login.github.redirect')}}" class="btn btn-danger"> Sign Up with GitHub </a>
+
 @endsection
